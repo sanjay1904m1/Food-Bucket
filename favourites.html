@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favourites</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/favicon.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="fetchData()">
+
+
+    <div class="navigation">
+            
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./favourites.html">My Favourites</a>
+            
+            
+     
+
+        </nav>
+        <div class="name"><h1>Food Bucket</h1></div>
+        <div class="text"><h2>Discover the best food </h2></div>
+        <div class="search">
+            
+                
+            <a href="./index.html" class="removeBtn">Explore more+</a>
+            <button type="submit" id="searchBtn" class="searchbtn" onclick="removeAll()">Clear All</button>
+            
+        </div>
+    </div>
+
+
+
+    <div class="mealDetails" id="mealDetails">
+        <button type="button" class="recipeClose" id="recipeClose">X</button>
+
+        <div class="mealContent">
+            
+
+
+
+        </div>
+    </div>
+    
+
+
+    <div class="jumbotron">
+        <img id="nofav" src="./img/favicon.jpeg" alt="">
+    
+        
+        <div class="container1">
+          
+          <div id="cards-group"></div>
+    
+        </div> 
+      </div> 
+
+
+
+
+<script src="./script1.js"></script>
+</body>
+</html>

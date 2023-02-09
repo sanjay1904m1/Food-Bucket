@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/favicon.jpeg" type="image/x-icon">
+    <title>Food Bucket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="navigation">
+            
+            <nav>
+                <a href="">Home</a>
+                <a href="./favourites.html">My Favourites</a>
+                
+                
+         
+
+            </nav>
+            <div class="name"><h1>Food Bucket</h1></div>
+            <div class="text"><h2>Discover the best food </h2></div>
+            <div class="search">
+                
+                    <input type="text" placeholder="search for your favourite dish here" class="search-content" id="searchText">
+                    <button type="submit" id="searchBtn" class="searchbtn" onclick="getMealList()">Search</button>
+                    
+                
+            </div>
+        </div>
+
+
+        <div class="searchResults">
+            <h2 class="title" id="searchtitle"></h2>
+            <h4 class="nosearch" id="nosearch">Sorry, We cant find your search result :)</h4>
+            <div id="meal" class="card1">
+                <!-- <div class="card">
+                    <div class="mealImage">
+                        <img src="./2.jpg" alt="">
+                    </div>
+                    <div class="mealName">
+                        <h3>Fish</h3>
+                        <div class="buttons">
+                            <a href="#" class="recipeBtn">Know More</a>
+                            <a href="#" class="recipeBtn">Add+</a>
+                        </div>
+                    </div>
+                </div> -->
+                
+            </div> 
+        </div>
+
+
+
+        <div class="mealDetails" id="mealDetails">
+            <button type="button" class="recipeClose" id="recipeClose">X</button>
+
+            <div class="mealContent">
+                <!-- <h2 class="mealTitle">Name of the Meal</h2>
+                <p class="mealCatogary">Catogary</p>
+                <div class="recipe">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Ea eum ab, ipsam natus amet cumque velit maxime quaerat 
+                        et provident illum sunt tempore sint animi delectus. 
+                        Voluptate optio error vel!Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Ea eum ab, ipsam natus amet cumque velit maxime quaerat 
+                        et provident illum sunt tempore sint animi delectus. 
+                        Voluptate optio error vel!Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Ea eum ab, ipsam natus amet cumque velit maxime quaerat 
+                        et provident illum sunt tempore sint animi delectus. 
+                        Voluptate optio error vel!Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Ea eum ab, ipsam natus amet cumque velit maxime quaerat 
+                        et provident illum sunt tempore sint animi delectus. 
+                        Voluptate optio error vel!Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Ea eum ab, ipsam natus amet cumque velit maxime quaerat 
+                        et provident illum sunt tempore sint animi delectus. 
+                        Voluptate optio error vel!Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Ea eum ab, ipsam natus amet cumque velit maxime quaerat 
+                        et provident illum sunt tempore sint animi delectus. 
+                        Voluptate optio error vel!</p>
+                </div>
+                <div class="mealCircleImage">
+                    <img src="./1.jpg" alt="">
+                </div> -->
+
+
+
+            </div>
+        </div>
+        
+
+
+        
+
+
+
+
+
+
+
+
+        <h2>Search by Most Liked</h2>
+        <div class="wrapper">
+            
+            <div class="card">
+                <img src="./img/1.jpg"  alt="lamb" onclick="getMealbyName(alt), topFunction()">
+                <h3>Chicken</h3>
+                <p></p>
+            </div>
+            <div class="card">
+                <img src="./img/2.jpg" alt="fish" onclick="getMealbyName(alt), topFunction()">
+                <h3>Fish </h3>
+                <p></p>
+            </div>
+            <div class="card">
+                <img src="./img/3.jpg" alt="pasta" onclick="getMealbyName(alt), topFunction()">
+                <h3>Veg -Pasta</h3>
+                <p></p>
+            </div>  
+        </div>
+        <h2>Explore more</h2>
+        <div class="exploreMore" >
+            
+            <div class="card">
+                <img src="./img/4.jpg" alt="breakfast" onclick="getMealbyName(alt), topFunction()" >
+                <h3>Samosa</h3>
+                <p></p>
+            </div>
+            <div class="card">
+                <img src="./img/5.jpg" alt="prawn" onclick="getMealbyName(alt), topFunction()">
+                <h3>Prawn</h3>
+                <p></p>
+            </div>
+            <div class="card">
+                <img src="./img/6.jpg" alt="breakfast" onclick="getMealbyName(alt), topFunction()">
+                <h3>Noodles</h3>
+                <p></p>
+            </div>
+            <div class="card">
+                <img src="./img/7.jpg" alt="chicken" onclick="getMealbyName(alt), topFunction()">
+                <h3>Chicken Leg</h3>
+                <p></p>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+    
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/f72372325e.js" crossorigin="anonymous"></script>
+</body>
+</html>
