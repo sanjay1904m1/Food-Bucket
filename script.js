@@ -1,3 +1,4 @@
+// get elements by their id name
 const searchbtn=document.getElementById("searchBtn");
 const meallist=document.getElementById('meal');
 
@@ -21,14 +22,15 @@ function getMealList(){
             if(data.meals){
                 document.getElementById('searchtitle').innerHTML="Your Search Results For :  "+searchTxt;
                 document.getElementById('searchtitle').style.display='block';
+                // the details tab remained with none is displayed now
             
-                data.meals.forEach(meal=>{
+                data.meals.forEach(meal=>{ // for each king of meal the display should be done
                     
                     html+=`
                 
                         <div class="card" data-id="${meal.idMeal}">
                             <div class="mealImage">
-                                <img src="${meal.strMealThumb}" alt="">
+                                <img src="${meal.strMealThumb}" alt=""> 
                             </div>
                             <div class="mealName">
                                 <h3>${meal.strMeal}</h3>
@@ -69,11 +71,13 @@ function getMealList(){
 
 }
 
+// onclick to bring the page back to Top at 80px
 function topFunction() {
     
-    document.documentElement.scrollTop = 80 // For Chrome, Firefox, IE and Opera
+    document.documentElement.scrollTop = 80 ;
   }
 
+//get the search result and put the cards with elements 
 function getMealbyName(name){
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${name}`)
         .then(res => res.json())
@@ -120,10 +124,10 @@ function getMealbyName(name){
         });
 }
 
-
+// get details of any sppecific meal
 function getDetails(e){
     e.preventDefault();
-    
+    // if the classList has the class named with recipeBtn its details need to be displayed
     if(e.target.classList.contains('recipeBtn')){
         let mealItem=e.target.parentElement.parentElement.parentElement;
         
@@ -134,7 +138,7 @@ function getDetails(e){
     }
 
 }
-
+// more details of the meal
 function mealModel(meal){
     console.log(meal)
     meal=meal[0]
